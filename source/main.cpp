@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "say_hello.h"
 
 int main(int argc, char* argv[])
 {
-    puts("Built using Open Watcom!\n");
+    say_hello();
     return 0;
 }

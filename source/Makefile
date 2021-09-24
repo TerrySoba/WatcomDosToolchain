@@ -1,6 +1,6 @@
 coptions = -ms -oneatx -xd -zp4 -0
 
-objects = main.o
+objects = main.o say_hello.o
 
 all: main.exe
 
