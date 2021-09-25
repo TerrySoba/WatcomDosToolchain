@@ -1,6 +1,6 @@
 # Open Watcom C++ Toolchain for DOS
 
-This project contains a simple development chain for cross development of 16bit DOS applications using Linux.
+This project contains a simple development chain for cross development of 16bit DOS applications. As it uses Docker for the actual build environment it can be used on Linux and Windows.
 
 The toolchain contains the following applications:
  * [Open Watcom v2](https://github.com/open-watcom/open-watcom-v2)

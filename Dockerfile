@@ -12,7 +12,7 @@ RUN apk add --update \
 RUN mkdir /opt/opwatcom
 WORKDIR /opt/opwatcom
 
-COPY --from=builder binl64 /opt/opwatcom/binl64
+COPY --from=builder binl /opt/opwatcom/binl
 COPY --from=builder eddat /opt/opwatcom/eddat
 COPY --from=builder h /opt/opwatcom/h
 COPY --from=builder lib286 /opt/opwatcom/lib286
@@ -20,6 +20,6 @@ COPY --from=builder lib386 /opt/opwatcom/lib386
 
 
 ENV WATCOM=/opt/opwatcom
-ENV PATH=$WATCOM/binl64:$PATH
+ENV PATH=$WATCOM/binl:$PATH
 ENV EDPATH=$WATCOM/eddat
 ENV INCLUDE=$WATCOM/h
