@@ -1,7 +1,7 @@
 FROM alpine:3.14 as builder
 
-RUN wget https://github.com/open-watcom/open-watcom-v2/releases/download/Current-build/ow-snapshot.tar.gz
-RUN tar -xvf ow-snapshot.tar.gz
+RUN wget https://github.com/open-watcom/open-watcom-v2/releases/download/Current-build/ow-snapshot.tar.xz
+RUN tar -xvf ow-snapshot.tar.xz
 
 FROM alpine:3.14
 
